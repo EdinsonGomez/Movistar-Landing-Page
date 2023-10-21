@@ -1,0 +1,12 @@
+@import '../abstracts/colors';
+
+.dropdown__item {
+  padding: 15px 25px;
+  white-space: nowrap;
+  font-size: 15px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $very-light-gray;
+  }
+}

@@ -1,0 +1,19 @@
+@import '../abstracts/colors';
+
+.btn {
+  background: $blue;
+  border: 2px solid $blue;
+  color: $light-gray;
+  padding: 8px 16px;
+  border-radius: 18px;
+  font-weight: 700;
+
+  &--outline {
+    background-color: $light-gray;
+    color: $blue;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

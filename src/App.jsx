@@ -1,9 +1,13 @@
+import Header from 'src/components/header/Header';
+import NavBar from './components/navBar/NavBar';
+
 function App() {
 
   return (
-    <h1>
-      Movistar Landing Page
-    </h1>
+    <>
+      <Header />
+      <NavBar />
+    </>
   )
 }
 
