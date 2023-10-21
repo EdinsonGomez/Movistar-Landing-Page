@@ -1,3 +1,5 @@
+@import '../abstracts/colors';
+
 .navBar {
   $padding-y: 20px;
   padding: $padding-y 0;
@@ -58,5 +60,28 @@
       }
     }
 
+    .navBar__bars-icon {
+      color: black;
+      display: none;
+    }
+
+  }
+}
+
+@media (max-width: 1095px) {
+  .navBar {
+    &__dropdown {
+      display: none;
+    }
+
+    &__actions {
+      .btn, .navBar__track-icon {
+        display: none;
+      }
+
+      .navBar__bars-icon {
+        display: block;
+      }
+    }
   }
 }

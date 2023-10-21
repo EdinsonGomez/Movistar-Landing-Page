@@ -66,3 +66,15 @@ table {
 .wrapper {
   margin: 0 50px;
 }
+
+@media (max-width: 850px) {
+  .wrapper {
+    margin: 0 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  .wrapper {
+    margin: 0 10px;
+  }
+}

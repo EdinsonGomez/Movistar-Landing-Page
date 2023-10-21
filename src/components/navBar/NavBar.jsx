@@ -3,6 +3,8 @@ import DropdownItem from "src/components/dropdown/DropdownItem";
 import OffersLabel from "./OfferLabel";
 import Button from "../button/Button";
 import IconButton from "../button/IconButton";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import "src/styles/navBar/navBar.scss";
 
@@ -36,7 +38,7 @@ const NavBar = () => {
             className="navBar__logo"
             src="src/assets/m-logo.png"
             alt="logo"
-            width={33}
+            width="40"
           />
           {Object.values(navConfig).map((config) => (
             <Dropdown
@@ -76,6 +78,9 @@ const NavBar = () => {
             width="24"
           >
             Notificaciones
+          </IconButton>
+          <IconButton className="navBar__bars-icon">
+            <FontAwesomeIcon icon={faBars} size="3x" />
           </IconButton>
         </div>
       </div>
