@@ -1,3 +1,5 @@
+@import './abstracts/colors.scss';
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -51,12 +53,38 @@ table {
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: $primary-color;
+  background-color: $light-gray;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  margin: 0 50px;
+}
+
+.divider {
+  border: 1px solid $dark-blue;
+}
+
+@media (max-width: 850px) {
+  .wrapper {
+    margin: 0 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  .wrapper {
+    margin: 0 10px;
+  }
 }

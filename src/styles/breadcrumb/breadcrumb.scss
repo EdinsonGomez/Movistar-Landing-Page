@@ -1,0 +1,29 @@
+@import '../abstracts/colors';
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px 0;
+  column-gap: 8px;
+
+  &__item {
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+  }
+
+  &__item--active {
+    color: $gray;
+  }
+
+  &__arrow {
+    color: black;
+  }
+}
+
+@media (max-width: 630px) {
+  .breadcrumb {
+    display: none;
+  }
+}

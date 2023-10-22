@@ -1,0 +1,14 @@
+.icon-btn {
+  border: none;
+  background: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  row-gap: 2px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

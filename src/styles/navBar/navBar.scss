@@ -1,0 +1,87 @@
+@import '../abstracts/colors';
+
+.navBar {
+  $padding-y: 20px;
+  padding: $padding-y 0;
+  box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.1);
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 8px;
+  }
+
+  &__container {
+    display: flex;
+    column-gap: 3px;
+    align-items: flex-start;
+  }
+
+  &__dropdown {
+    .dropdown__menu {
+      top: calc(100% + $padding-y + 2px);
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 5px;
+
+    .btn {
+      margin-right: 8px;
+    }
+
+    .navBar__search-icon {
+      padding: 5px;
+    }
+
+    .navBar__track-icon, .navBar__notifications-icon {
+      align-self: flex-end;
+    }
+
+    .navBar__notifications-icon {
+      position: relative;
+
+      &::after {
+        $size: 10px;
+        content: "";
+        position: absolute;
+        width: $size;
+        height: $size;
+        border-radius: 50%;
+        background-color: red;
+        top: 0;
+        right: 35%;
+      }
+    }
+
+    .navBar__bars-icon {
+      color: black;
+      display: none;
+    }
+
+  }
+}
+
+@media (max-width: 1095px) {
+  .navBar {
+    &__dropdown {
+      display: none;
+    }
+
+    &__actions {
+      .btn, .navBar__track-icon {
+        display: none;
+      }
+
+      .navBar__bars-icon {
+        display: block;
+      }
+    }
+  }
+}

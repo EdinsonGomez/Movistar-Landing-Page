@@ -1,0 +1,46 @@
+@import '../abstracts/colors';
+
+.menu {
+  &__label {
+    list-style: none;
+    position: relative;
+    padding: 10px 15px;
+    font-weight: 700;
+    font-size: 16px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &::marker {
+      display: none;
+    }
+
+    &::after {
+      $border: 2px solid $blue;
+      $size: 10px; 
+      content: "";
+      position: absolute;
+      width: $size;
+      height: $size;
+      border-right: $border;
+      border-bottom: $border;
+      transform: rotate(45deg);
+      transition: all 0.2s ease-in;
+      right: 10px;
+      top: 5px;
+    }
+
+    &--open::after {
+      transform: rotate(225deg);
+      top: 15px;
+    }
+  }
+
+  &__content {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+}
