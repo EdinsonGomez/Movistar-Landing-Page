@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import "src/styles/breadcrumb/breadcrumb.scss";
@@ -9,7 +10,7 @@ const Breadcrumb = () => {
     <div className="wrapper">
       <div className="breadcrumb">
         {breadcrumbList.map((route, idx) => (
-          <>
+          <Fragment key={route.replaceAll(' ', '-')}>
             <a
               href=""
               className={`breadcrumb__item ${
@@ -23,7 +24,7 @@ const Breadcrumb = () => {
             {idx !== breadcrumbList.length - 1 ? (
               <FontAwesomeIcon className="breadcrumb__arrow" icon={faChevronRight} size="xs" />
             ) : null}
-          </>
+          </Fragment>
         ))}
       </div>
     </div>

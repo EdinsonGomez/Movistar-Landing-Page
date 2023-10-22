@@ -24,6 +24,10 @@
 @media (max-width: 630px) {
   .presentation {
     background-image: url('src/assets/banner-mobile.png');
-    height: 400px;
+    height: 500px;
+
+    &__title {
+      font-size: 35px;
+    }
   }
 }

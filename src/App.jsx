@@ -1,8 +1,9 @@
 import Header from 'src/components/header/Header';
-import Breadcrumb from './components/breadcrumb/Breadcrumb';
-import Footer from './components/footer/Footer';
-import NavBar from './components/navBar/NavBar';
-import Presentation from './components/presentation/Presentation';
+import Breadcrumb from 'src/components/breadcrumb/Breadcrumb';
+import Coverage from 'src/components/coverage/Coverage';
+import Footer from 'src/components/footer/Footer';
+import NavBar from 'src/components/navBar/NavBar';
+import Presentation from 'src/components/presentation/Presentation';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <main className='main'>
         <Breadcrumb />
         <Presentation />
+        <Coverage />
       </main>
       <Footer />
     </>
