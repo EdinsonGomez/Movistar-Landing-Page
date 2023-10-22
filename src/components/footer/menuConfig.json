@@ -1,0 +1,67 @@
+{
+  "Hogar": [
+    { "label": "Internet Hogar" },
+    { "label": "Fibra Óptica" },
+    { "label": "Planes dúo Movistar" },
+    { "label": "Movistar TV" },
+    { "label": "Trío Movistar" },
+    { "label": "Movistar Total beneficios" },
+    { "label": "Movistar TV App" },
+    { "label": "Repetidor Wifi" },
+    { "label": "Televisión por internet" }
+  ],
+  "Móvil": [
+    { "label": "Portabilidad Movistar" },
+    { "label": "Movistar planes Postpago" },
+    { "label": "Renovar tu equipo" },
+    { "label": "Celulares Liberados" },
+    { "label": "Celulares en Oferta" },
+    { "label": "Equipos postpago" },
+    { "label": "Roaming" },
+    { "label": "Preplan Movistar" },
+    { "label": "Recargas y paquetes Movistar" },
+    { "label": "Beneficios Movistar Prepago" },
+    { "label": "Línea adicional" },
+    { "label": "Celulares" }
+  ],
+  "Smartphones": [
+    { "label": "Celulares iPhone" },
+    { "label": "Celulares Samsung" },
+    { "label": "Celulares Xiaomi" },
+    { "label": "Celulares Motorola" },
+    { "label": "Celulares Huawei" },
+    { "label": "Celulares Realme" },
+    { "label": "Celulares Honor" },
+    { "label": "Celulares Oppo" },
+    { "label": "Celulares ZTE" },
+    { "label": "Celulares Vivo" },
+    { "label": "Todas las marcas" }
+  ],
+  "Atención al cliente": [
+    { "label": "App Mi Movistar" },
+    { "label": "Mi Movistar" },
+    { "label": "Lucía" },
+    { "label": "Asesora virtual" },
+    { "label": "Mapa web" },
+    { "label": "Ganadores de sorteos" }
+  ],
+  "Promociones especiales": [
+    { "label": "Cyber Wow" },
+    { "label": "Cyber Days" },
+    { "label": "Día de la Madre" },
+    { "label": "Día del Padre" },
+    { "label": "Celebratón" }
+  ],
+  "Avisos Regulación y legales": [
+    { "label": "Calidad OSIPTEL" },
+    { "label": "Cobertura inalámbrica" },
+    { "label": "SISMATE" },
+    { "label": "Uso de la res en caso de emergencia" },
+    { "label": "Medio Ambiente" },
+    { "label": "Centro de transparencia y privacidad" },
+    { "label": "Conectarse" },
+    { "label": "Neutralidad de red" },
+    { "label": "Consulta de contratos y solicitudes" },
+    { "label": "Tarifas planes vigentes" }
+  ]
+}

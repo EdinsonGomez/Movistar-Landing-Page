@@ -63,8 +63,18 @@ table {
   -webkit-text-size-adjust: 100%;
 }
 
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .wrapper {
   margin: 0 50px;
+}
+
+.divider {
+  border: 1px solid $dark-blue;
 }
 
 @media (max-width: 850px) {
