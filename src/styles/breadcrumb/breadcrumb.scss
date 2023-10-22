@@ -21,3 +21,9 @@
     color: black;
   }
 }
+
+@media (max-width: 630px) {
+  .breadcrumb {
+    display: none;
+  }
+}

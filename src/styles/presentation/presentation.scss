@@ -1,0 +1,29 @@
+@import '../abstracts/colors';
+
+.presentation {
+  background-image: url('src/assets/banner-desktop.png');
+  background-size: cover;
+  color: $light-gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  padding: 60px 50px 0 50px;
+  height: 300px;
+
+  &__title, &__subtitle {
+    text-align: center;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 630px) {
+  .presentation {
+    background-image: url('src/assets/banner-mobile.png');
+    height: 400px;
+  }
+}
