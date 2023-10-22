@@ -4,6 +4,7 @@ import Coverage from 'src/components/coverage/Coverage';
 import Footer from 'src/components/footer/Footer';
 import NavBar from 'src/components/navBar/NavBar';
 import Presentation from 'src/components/presentation/Presentation';
+import Packages from './components/packages/Packages';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Breadcrumb />
         <Presentation />
         <Coverage />
+        <Packages />
       </main>
       <Footer />
     </>
