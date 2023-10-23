@@ -156,6 +156,7 @@ table {
 
 .divider {
 	border: 1px solid $dark-blue;
+	width: 100%;
 }
 
 @media (max-width: 850px) {
@@ -164,7 +165,7 @@ table {
 	}
 }
 
-@media (max-width: 650px) {
+@media (max-width: 640px) {
 	.wrapper {
 		margin: 0 10px;
 	}

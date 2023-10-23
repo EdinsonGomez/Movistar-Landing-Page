@@ -1,0 +1,14 @@
+@import '../abstracts/colors';
+
+.arrow-btn {
+	padding: 10px 12px;
+	border-radius: 50%;
+	background-color: $blue;
+	color: $light-gray;
+	border: 1px solid $blue;
+
+	&--outline {
+		color: $blue;
+		background-color: $light-gray;
+	}
+}
