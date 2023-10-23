@@ -1,0 +1,116 @@
+@import '../abstracts/colors';
+@import '../abstracts/variables';
+
+.fibra-section {
+	&__title {
+		font-size: 30px;
+		font-weight: 400;
+		color: rgba(black, 0.8);
+	}
+
+	&__content {
+		display: flex;
+		width: 100%;
+	}
+
+	&__cards-container,
+	&__image {
+		flex: 1;
+	}
+
+	&__cards-container {
+		padding: 50px 0;
+	}
+
+	&__cards-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-content: center;
+		gap: 20px 20px;
+	}
+
+	&__card {
+		display: flex;
+		&:nth-child(odd) {
+			justify-self: end;
+		}
+
+		&:nth-child(even) {
+			justify-self: start;
+		}
+
+		.card__content {
+			display: flex;
+			margin: 0;
+			padding: 25px 15px;
+			column-gap: 10px;
+			align-items: center;
+		}
+	}
+
+	&__card-icon {
+		width: 50px;
+	}
+
+	&__card-title {
+		font-size: 13.5px;
+		font-weight: 800;
+		max-width: 150px;
+	}
+
+	&__image {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			width: 90%;
+			border-radius: 10px;
+		}
+	}
+}
+
+@media (max-width: $breakpoint-m) {
+	.fibra-section {
+		&__content {
+			flex-direction: column;
+		}
+
+		&__cards-container {
+			order: 2;
+		}
+
+		&__image {
+			order: 1;
+		}
+	}
+}
+
+@media (max-width: $breakpoint-s) {
+	.fibra-section {
+		&__card {
+			.card__content {
+				flex-direction: column;
+				row-gap: 20px;
+				justify-content: flex-end;
+
+				img {
+					width: 60px;
+				}
+
+				p {
+					text-align: center;
+				}
+			}
+		}
+
+		&__card-icon {
+			width: 60px;
+		}
+
+		&__card-title {
+			max-width: auto;
+			font-size: 15px;
+		}
+	}
+}
