@@ -88,6 +88,11 @@
 
 @media (max-width: $breakpoint-s) {
 	.fibra-section {
+		&__title {
+			font-size: 28px;
+			margin: 0 10px;
+		}
+
 		&__card {
 			.card__content {
 				flex-direction: column;

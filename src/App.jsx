@@ -6,6 +6,7 @@ import NavBar from 'src/components/navBar/NavBar';
 import Presentation from 'src/components/presentation/Presentation';
 import Packages from './components/packages/Packages';
 import FibraSection from './components/fibra-section/FibraSection';
+import StreamingSection from './components/streaming-section/StreamingSection';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Packages />
         <div className="main-sections">
           <FibraSection />
+          <StreamingSection />
         </div>
       </main>
       <Footer />

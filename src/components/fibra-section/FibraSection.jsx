@@ -1,6 +1,6 @@
 import Card from '../card/Card';
-import 'src/styles/fibra-section/fibra-section.scss';
 import Section from '../section/Section';
+import 'src/styles/fibra-section/fibra-section.scss';
 
 const cardsConfig = {
   download: {
