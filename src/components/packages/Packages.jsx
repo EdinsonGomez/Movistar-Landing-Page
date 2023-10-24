@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import { useArrowBtn, arrowDirections } from '../../hooks/useArrowBtn';
 import PackagesTypes from './PackagesTypes';
 import packagesConfig from './packages.json';
 import PackageItem from './PackageItem';
@@ -6,37 +7,10 @@ import ArrowButton from '../button/ArrowButton';
 import PackagesFooter from './PackagesFooter';
 import 'src/styles/packages/packages.scss';
 
-const arrowDirections = {
-	left: 'LEFT',
-	right: 'RIGHT',
-};
-
 const Packages = () => {
 	const listRef = useRef(null);
 
-	const onClickArrow = (direction) => {
-		const listElement = listRef.current;
-    const step = 200;
-
-    if (!listElement) return
-
-    const scrollLeftPosition = listElement.scrollLeft;
-    let newLeftPosition = scrollLeftPosition;
-
-    if (direction === arrowDirections.left) {
-      newLeftPosition -= step;
-    }
-
-    if (direction === arrowDirections.right) {
-      newLeftPosition += step;
-    }
-
-    listElement.scrollTo({
-      left: newLeftPosition,
-      behavior: "smooth"
-    })
-
-	};
+	const { onClickArrow } = useArrowBtn(listRef);
 
 	return (
 		<div className='wrapper packages'>
