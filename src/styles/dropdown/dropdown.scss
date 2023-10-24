@@ -1,0 +1,55 @@
+@import '../abstracts/colors';
+
+.dropdown {
+  position: relative;
+  
+  &__summary {
+    border: none;
+    background: inherit;
+    font-size: 14px;
+    padding: 3px 8px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &--with-menu {
+      padding-right: 20px;
+
+      &::after {
+        $size: 6px;
+        content: "";
+        position: absolute;
+        border-width: 0 2px 2px 0;
+        border-style: solid;
+        border-color: $gray;
+        width: $size;
+        height: $size;
+        top: 25%;
+        right: 2px;
+        transform: rotate(45deg);
+        transition: all 0.2s ease-in;
+      }
+
+      &.dropdown__summary--open::after {
+        transform: rotate(225deg);
+        top: 40%;
+      }
+    }
+    
+  }
+
+  &__menu {
+    display: none;
+    position: absolute;
+    min-width: 100%;
+    top: 110%;
+    border-radius: 5px;
+    background-color: $light-gray;
+    box-shadow: 3px 3px 8px 5px rgba(0,0,0,0.1);
+  }
+
+  &__menu--open {
+    display: block;
+  }
+}

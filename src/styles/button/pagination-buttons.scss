@@ -1,0 +1,23 @@
+@import '../abstracts/colors';
+
+.pagination-buttons {
+	display: flex;
+	column-gap: 5px;
+	align-items: center;
+
+	&__item {
+		$size: 14px;
+		width: $size;
+		height: $size;
+		border-radius: 50%;
+		background-color: rgba($gray, 0.5);
+
+		&--active {
+			background-color: $blue;
+		}
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}

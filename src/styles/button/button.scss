@@ -1,0 +1,28 @@
+@import '../abstracts/colors';
+
+.btn {
+	background: $blue;
+	border: 2px solid $blue;
+	color: $light-gray;
+	padding: 8px 16px;
+	border-radius: 17px;
+	font-weight: 700;
+	height: 34px;
+	white-space: nowrap;
+
+	&--outline {
+		background-color: $light-gray;
+		color: $blue;
+	}
+
+	&--medium {
+		height: 45px;
+		border-radius: 25px;
+		padding: 0 15px;
+		font-size: 17px;
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+}

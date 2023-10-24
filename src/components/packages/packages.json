@@ -1,0 +1,71 @@
+[
+	{
+		"title": "Solo internet fibra",
+		"subtitle": "Fibra Óptica",
+		"speed": "100 Mbps",
+		"speedCharacteristic": "Velocidad simétrica",
+		"price": "39.90",
+		"regularPrice": "79.90",
+		"installFree": true,
+		"bonusIncluded": true,
+		"tiktokIncluded": true,
+		"primeIncluded": true,
+		"downloadSpeed": "100 Mbps",
+		"uploadSpeed": "100 Mbps"
+	},
+	{
+		"bestSeller": true,
+		"title": "Solo internet fibra",
+		"subtitle": "Fibra Óptica",
+		"speed": "150 Mbps",
+		"speedCharacteristic": "Velocidad simétrica",
+		"price": "54.90",
+		"regularPrice": "94.90",
+		"installFree": true,
+		"bonusIncluded": true,
+		"tiktokIncluded": true,
+		"primeIncluded": true,
+		"downloadSpeed": "150 Mbps",
+		"uploadSpeed": "150 Mbps"
+	},
+	{
+		"title": "Solo internet fibra",
+		"subtitle": "Fibra Óptica",
+		"speed": "200 Mbps",
+		"speedCharacteristic": "Velocidad simétrica",
+		"price": "79.90",
+		"regularPrice": "119.90",
+		"installFree": true,
+		"bonusIncluded": true,
+		"tiktokIncluded": true,
+		"primeIncluded": true,
+		"downloadSpeed": "200 Mbps",
+		"uploadSpeed": "200 Mbps"
+	},
+	{
+		"title": "Solo internet fibra",
+		"subtitle": "Fibra Óptica",
+		"speed": "600 Mbps",
+		"speedCharacteristic": "Velocidad de internet",
+		"price": "199.90",
+		"regularPrice": "239.90",
+		"installFree": true,
+		"bonusIncluded": true,
+		"tiktokIncluded": true,
+		"primeIncluded": true,
+		"downloadSpeed": "600 Mbps",
+		"uploadSpeed": "300 Mbps"
+	},
+	{
+		"title": "Solo internet fibra",
+		"subtitle": "Fibra Óptica",
+		"speed": "1 GB",
+		"speedCharacteristic": "Velocidad de internet",
+		"price": "399.90",
+		"regularPrice": "439.90",
+		"installFree": true,
+		"tiktokIncluded": true,
+		"downloadSpeed": "1000 Mbps",
+		"uploadSpeed": "500 Mbps"
+	}
+]

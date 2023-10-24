@@ -1,0 +1,43 @@
+@import '../abstracts/colors';
+
+.packages-types {
+	max-width: 100%;
+
+	.card__content {
+		display: flex;
+		column-gap: 10px;
+		margin: 10px;
+		flex-wrap: nowrap;
+		overflow-y: scroll;
+		scrollbar-width: none;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+
+	&__item {
+		border-radius: 8px;
+		padding: 20px 35px;
+		width: 240px;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: center;
+		background-color: rgba(0, 0, 0, 0.05);
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		p {
+			font-weight: bold;
+			font-size: 15px;
+			white-space: nowrap;
+		}
+
+		&--active {
+			background-color: $dark-blue;
+			color: $light-gray;
+		}
+	}
+}
