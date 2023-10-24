@@ -2,6 +2,8 @@
 @import '../abstracts/variables';
 
 .section {
+	padding: 5px 0;
+
 	&__content {
 		display: flex;
 		flex-direction: column;
@@ -14,5 +16,9 @@
 		font-size: 28px;
 		color: $title-color;
 		line-height: 35px;
+	}
+
+	&:nth-child(odd) {
+		background-color: rgba($gray, 0.1);
 	}
 }
