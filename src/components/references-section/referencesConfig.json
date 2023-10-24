@@ -1,0 +1,22 @@
+[
+	{
+		"name": "Margarita",
+		"lastName": "Martinez",
+		"plan": "Tiene un plan internet Hogar Fibra Óptica 600 Megas",
+		"srcImage": "src/assets/client-image.png",
+		"testimony": [
+			"Estos meses de cuarentena le hemos sacado el jugo al internet. En la casa estamos todos trabando y estudiando a distancia a la misma hora",
+			"Sí, cambiarme a Movistar fue la mejor decisión"
+		]
+	},
+	{
+		"name": "Fernando",
+		"lastName": "Bustos",
+		"plan": "Tiene un plan internet Hogar Fibra Óptica 400 Megas",
+		"srcImage": "src/assets/clients-image.png",
+		"testimony": [
+			"Esto de la Fibra Óptica te cambia la vida. El no tener que esperar que carguen los videos es algo tan simple pero tan genial, que se valora mucho.",
+			"El sencillo hecho de 'olvidarme' del internet o de las horas de baja velocidad, es algo que agradezco."
+		]
+	}
+]

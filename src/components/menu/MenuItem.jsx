@@ -1,8 +1,8 @@
 import 'src/styles/menu/menu-item.scss';
 
-const MenuItem = ({ children }) => {
+const MenuItem = ({ className, children }) => {
   return (
-    <li className="menu-item">
+    <li className={`menu-item ${className ?? ''}`}>
       {children}
     </li>
   )
