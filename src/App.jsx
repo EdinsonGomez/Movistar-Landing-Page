@@ -8,6 +8,7 @@ import Packages from './components/packages/Packages';
 import FibraSection from './components/fibra-section/FibraSection';
 import StreamingSection from './components/streaming-section/StreamingSection';
 import WifiSection from './components/wifi-section/WifiSection';
+import ReferencesSection from './components/references-section/ReferencesSection';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           <FibraSection />
           <StreamingSection />
           <WifiSection />
+          <ReferencesSection />
         </div>
       </main>
       <Footer />
