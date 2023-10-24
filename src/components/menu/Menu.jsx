@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "src/styles/menu/menu.scss";
 
-const Menu = ({ children, label }) => {
+const Menu = ({ label, className, children }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <details className="menu">
+    <details className={`menu ${className ?? ''}`}>
       <summary
         className={`menu__label ${open ? "menu__label--open" : ""}`}
         onClick={() => setOpen(!open)}

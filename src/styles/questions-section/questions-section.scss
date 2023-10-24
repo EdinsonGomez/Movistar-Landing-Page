@@ -1,0 +1,45 @@
+@import '../abstracts/colors';
+@import '../abstracts/variables';
+
+.questions-section {
+	.section__content {
+		row-gap: 40px;
+	}
+
+	&__title {
+		font-size: 35px;
+		color: $blue;
+		font-weight: 400;
+		text-align: center;
+	}
+
+	&__list {
+		width: 100%;
+	}
+
+	&__menu {
+		.menu__label {
+			border-bottom: 1px solid rgba($color: #000000, $alpha: 0.4);
+			padding: 30px 15px;
+			color: $title-color;
+			font-weight: 400;
+
+			&::after {
+				top: 40%;
+			}
+		}
+
+		.menu__content {
+			background-color: rgba($color: #000000, $alpha: 0.03);
+			padding: 30px 10px;
+		}
+	}
+}
+
+@media (max-width: $breakpoint-s) {
+	.questions-section {
+		&__title {
+			font-size: 28px;
+		}
+	}
+}
