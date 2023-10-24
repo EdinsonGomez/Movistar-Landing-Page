@@ -1,0 +1,196 @@
+@import '../abstracts/colors';
+@import '../abstracts/variables';
+
+.wifi-section {
+	&__content {
+		display: flex;
+		column-gap: 40px;
+	}
+
+	&__text-container,
+	&__image {
+		flex: 1;
+	}
+
+	&__text-container {
+		margin: 50px;
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+	}
+
+	&__text {
+		font-size: 15px;
+		font-weight: 400;
+		color: $title-color;
+		line-height: 20px;
+	}
+
+	&__image {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+
+		img {
+			width: 85%;
+			height: 70%;
+		}
+	}
+
+	&__card,
+	&__footer {
+		width: 100%;
+	}
+
+	&__card {
+		.card__content {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+
+	&__card-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 20px;
+
+		p {
+			font-size: 13.8px;
+			text-align: center;
+			max-width: 220px;
+			font-weight: 400;
+			line-height: 20px;
+		}
+	}
+
+	&__card-icon {
+		width: 50px;
+		height: 60px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&__footer {
+		.card__content {
+			display: flex;
+			justify-content: space-around;
+		}
+	}
+
+	&__app {
+		display: flex;
+		align-items: flex-start;
+		column-gap: 25px;
+	}
+
+	&__app-logo {
+		margin-top: 10px;
+	}
+
+	&__app-content {
+		display: flex;
+		flex-direction: column;
+		row-gap: 10px;
+		max-width: 400px;
+		color: $title-color;
+	}
+
+	&__app-title {
+		font-size: 23px;
+		font-weight: 300;
+		line-height: 28px;
+
+		b {
+			font-weight: 500;
+		}
+	}
+
+	&__app-text {
+		font-size: 14px;
+		font-weight: 400;
+	}
+
+	&__app-icons {
+		margin-top: 5px;
+		display: flex;
+		width: 100%;
+		column-gap: 20px;
+
+		img {
+			width: 150px;
+		}
+	}
+
+	&__app-img {
+		position: relative;
+
+		img {
+			position: absolute;
+			top: -50px;
+			left: -200px;
+			width: 280px;
+		}
+	}
+}
+
+@media (max-width: $breakpoint-m) {
+	.wifi-section {
+		&__content {
+			flex-direction: column;
+		}
+
+		&__text-container {
+			margin: 50px 5%;
+		}
+
+		&__image {
+			justify-content: center;
+
+			img {
+				width: 90%;
+			}
+		}
+
+		&__app-img {
+			display: none;
+		}
+
+		&__card {
+			.card__content {
+				grid-template-columns: repeat(2, 1fr);
+				gap: 20px 10px;
+			}
+		}
+
+		&__app-content {
+			max-width: 300px;
+		}
+	}
+}
+
+@media (max-width: $breakpoint-s) {
+	.wifi-section {
+		&__app-content {
+			max-width: 200px;
+		}
+
+		&__app-title {
+			font-size: 20px;
+			line-height: 22px;
+		}
+
+		&__app-icons {
+			column-gap: 5px;
+
+			img {
+				width: 100px;
+			}
+		}
+	}
+}
