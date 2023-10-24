@@ -288,6 +288,30 @@
 			color: rgba(#000000, 0.6);
 		}
 	}
+
+	&__more-btn {
+		margin-top: 20px;
+
+		button {
+			background: inherit;
+			border: none;
+			text-decoration: underline;
+			color: $blue;
+			font-size: 18px;
+			display: flex;
+			column-gap: 10px;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+
+		&--open {
+			button svg {
+				transform: rotate(180deg);
+			}
+		}
+	}
 }
 
 @media (max-width: 470px) {
@@ -317,7 +341,7 @@
 @media (max-width: $breakpoint-s) {
 	.package-item {
 		.card__content {
-			margin: 80px 25px;
+			margin: 80px 25px 40px 25px;
 		}
 
 		&__text-feature {
@@ -387,6 +411,21 @@
 			}
 		}
 
+		&__apps-container,
+		&__footer,
+		&__feature,
+		.divider {
+			display: none;
+
+			&--mobile-open {
+				display: flex;
+			}
+		}
+
+		.divider--mobile-open {
+			display: block;
+		}
+
 		&__apps-container {
 			row-gap: 15px;
 		}
@@ -410,8 +449,21 @@
 		}
 
 		&__feature-text,
-		&__feature--bonus p {
-			font-size: 18px;
+		&__feature--bonus {
+			p {
+				font-size: 18px;
+			}
+
+			&.package-item__feture--mobile-open {
+				display: block;
+			}
+		}
+
+		&__feature--tiktok,
+		&__feature--prime {
+			&.package-item__feture--mobile-open {
+				display: flex;
+			}
 		}
 
 		&__feature-text {

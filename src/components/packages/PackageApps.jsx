@@ -7,9 +7,9 @@ const appIcons = {
 	spotify: 'src/assets/spotify-icon.png',
 };
 
-const PackageApps = ({ apps = [] }) => {
+const PackageApps = ({ className, apps = [] }) => {
 	return (
-		<div className='package-item__apps-container'>
+		<div className={`package-item__apps-container ${className ?? ''}`}>
 			<small className='package-item__apps-text'>App ilimitadas x 12 meses*</small>
 			<div className='package-item__apps'>
 				{apps.map((app, idx) =>

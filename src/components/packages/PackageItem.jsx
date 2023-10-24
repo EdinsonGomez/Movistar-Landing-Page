@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Card from 'src/components/card/Card';
 import Button from 'src/components/button/Button';
 import PackageTag from './PackageTag';
@@ -7,6 +8,8 @@ import BonusFeature from './BonusFeature';
 import TikTokFeature from './TikTokFeature';
 import PrimeFeature from './PrimeFeature';
 import PackageItemFooter from './PackageItemFooter';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import 'src/styles/packages/package-item.scss';
 
 const apps = [
@@ -20,6 +23,9 @@ const apps = [
 
 const PackageItem = ({ packageData }) => {
   const price = packageData?.price?.split('.');
+
+  const [openMore, setOpenMore] = useState(false);
+
   return (
     <Card className='package-item'>
       {packageData.bestSeller ? <PackageTag /> : null}
@@ -64,15 +70,22 @@ const PackageItem = ({ packageData }) => {
           Llámame ahora
         </Button>
       </div>
-      <PackageApps apps={apps} />
-      {packageData?.bonusIncluded ? <BonusFeature /> : null}
-      {packageData?.tiktokIncluded ? <TikTokFeature /> : null}
-      <PrimeFeature />
-      <div className='divider' />
+      <PackageApps className={`${openMore ? 'package-item__apps-container--mobile-open' : ''}`} apps={apps} />
+      {packageData?.bonusIncluded ? <BonusFeature className={`${openMore ? 'package-item__feature--mobile-open' : ''}`} /> : null}
+      {packageData?.tiktokIncluded ? <TikTokFeature className={`${openMore ? 'package-item__feature--mobile-open' : ''}`} /> : null}
+      <PrimeFeature className={`${openMore ? 'package-item__feature--mobile-open' : ''}`} />
+      <div className={`divider ${openMore ? 'divider--mobile-open' : ''}`} />
       <PackageItemFooter
+        className={`${openMore ? 'package-item__footer--mobile-open' : ''}`}
         uploadSpeed={packageData.uploadSpeed}
         downloadSpeed={packageData.downloadSpeed}
       />
+      <div className={`package-item__more-btn ${openMore ? 'package-item__more-btn--open' : ''}`}>
+        <button type="button" onClick={() => setOpenMore(!openMore)}>
+          {openMore ? 'Ver menos' : 'Ver más beneficios'}
+          <FontAwesomeIcon icon={faChevronDown} />
+        </button>
+      </div>
     </Card>
   );
 };

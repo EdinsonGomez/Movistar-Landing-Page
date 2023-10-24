@@ -1,6 +1,6 @@
-const TikTokFeature = () => {
+const TikTokFeature = ({ className }) => {
   return (
-    <div className="package-item__feature package-item__feature--tiktok">
+    <div className={`package-item__feature package-item__feature--tiktok ${className ?? ''}`}>
       <div className="feature__tiktok-text">
         <span>
           <img src="src/assets/tiktok-icon.png" alt="ticktock" />

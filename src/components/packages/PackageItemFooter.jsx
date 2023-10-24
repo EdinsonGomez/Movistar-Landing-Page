@@ -1,6 +1,6 @@
-const PackageItemFooter = ({ downloadSpeed, uploadSpeed }) => {
+const PackageItemFooter = ({ className, downloadSpeed, uploadSpeed }) => {
   return (
-    <div className="package-item__footer">
+    <div className={`package-item__footer ${className}`}>
       <img src="src/assets/fibra-icon.png" alt="friba-icon" width={20} height={20} />
       <div className="package-item__footer-text">
         <span>Velocidad de internet Fibra</span>

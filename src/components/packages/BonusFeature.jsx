@@ -1,6 +1,6 @@
-const BonusFeature = () => {
+const BonusFeature = ({ className }) => {
   return (
-    <div className="package-item__feature package-item__feature--bonus">
+    <div className={`package-item__feature package-item__feature--bonus ${className ?? ''}`}>
       <div className="package-item__feature-text">
         <p>¡Imperdible!</p>
         <small>
